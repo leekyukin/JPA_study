@@ -1,4 +1,4 @@
-package com.study.jpastudy.relationship.단방향;
+package com.study.jpastudy.relationship.단방향.JAVA;
 
 import lombok.Getter;
 import lombok.Setter;

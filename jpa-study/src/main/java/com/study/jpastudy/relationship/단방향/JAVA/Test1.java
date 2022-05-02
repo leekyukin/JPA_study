@@ -1,4 +1,4 @@
-package com.study.jpastudy.relationship.단방향;
+package com.study.jpastudy.relationship.단방향.JAVA;
 
 public class Test1 {
     public static void main(String[] args) {
