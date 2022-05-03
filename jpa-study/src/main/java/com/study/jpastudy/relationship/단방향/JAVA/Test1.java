@@ -14,5 +14,6 @@ public class Test1 {
         Team findTeam = member1.getTeam();
 
         System.out.println(">>> " + findTeam);
+
     }
 }
