@@ -14,10 +14,9 @@ import java.lang.management.ManagementFactory;
 public class Member {
 
     @Id
-    private Long memberId;
+    private String memberId;
 
     private String name;
-
 
     public Member() {
 
