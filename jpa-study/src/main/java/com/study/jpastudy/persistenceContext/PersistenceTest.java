@@ -1,23 +1,22 @@
 package com.study.jpastudy.persistenceContext;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
 public class PersistenceTest {
-    @PersistenceContext
-    private static EntityManager em;
+
 
     public static void main(String[] args) {
+
+        MyPersistenceMethod em = new MyPersistenceMethod();
+
 
         Member m1 = new Member("member1", "팀원1");
 
         em.persist(m1);
 
         Member copyM1 = em.find(Member.class, "member1");
+        Member dcopyM1 = em.find(Member.class, "member2");
 
-        System.out.println(m1);
+        System.out.println("dcopyM1 == copyM1 >>> " + (dcopyM1 == copyM1));
 
-
-
+        em.flush();
     }
 }
