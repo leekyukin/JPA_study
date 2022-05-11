@@ -9,6 +9,9 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class Member {
+
+
+
     @Id
     @Column(name = "MEMBER_ID")
     private String Id;
